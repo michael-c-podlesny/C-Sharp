@@ -1,6 +1,12 @@
 CLR (common language runtime)
 JIT (just in time compilation)
 
+A class is a container that has Data and Methods (also called functions)
+
+Namespace - is a container for related classes
+
+Assembly - is a container for related namespaces
+
 
 
 Class Library
