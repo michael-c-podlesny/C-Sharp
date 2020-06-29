@@ -38,18 +38,51 @@ don't use Hungarian in C#
 
 variable types:
 
-byte
+byte      number from 1 to 255
 short     which is an Int16
 int       which is an Int32
 long      which is an Int 64
-float     single
-double    double
-decimal
+float     single            add suffix f to end of number
+double    double      default number datatype
+decimal                     add suffix m to end of number
 char
 bool
 string
 
 
 
+number = number + 1  equals number++ which also equals number+=1
+
+***** checking for overflow error *****
+checked
+{
+  //code block
+}
 
 
+CTRL+SHIFT+B === compiles the code
+CTRL+F5 === runs the code
+
+
+
+SAMPLE CODE
+===========
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            byte number = 2;
+            int count = 10;
+            float totalPrice = 20.95f;
+            char character = 'A';
+            string myFirstString = "This is my first string";
+            bool isWorking = true;
+
+            Console.WriteLine(number);
+            Console.WriteLine(totalPrice);
+            Console.WriteLine(count);
+        }
+    }
+}
