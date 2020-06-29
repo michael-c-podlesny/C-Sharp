@@ -126,3 +126,19 @@ CATCHING ERRORS
             {
                 Console.WriteLine("Error in code!");
             }
+
+
+==      equal to
+!=    not equl to
+>     greater than
+>=    
+<
+<=
+
+
+LOGICAL OEPRATOR
+================
+&&    And
+||    OR
+!     NOT
+
