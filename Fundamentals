@@ -142,3 +142,12 @@ LOGICAL OEPRATOR
 ||    OR
 !     NOT
 
+
+COMMENTS
+========
+
+
+use //  for a single line comment
+
+or 
+/*   */   for many lines of comments
