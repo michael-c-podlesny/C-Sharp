@@ -11,3 +11,20 @@ Assembly - is a container for related namespaces
 
 Class Library
 
+to delare a variable
+
+type identifier;
+ex. int myFirstInt;
+ex. int myFirstInt = 1;
+
+constants
+
+const float Pi = 3.14159f;
+
+variables are case sensitive
+
+variable names can't start with a number and they can't have white space
+
+
+
+
