@@ -26,5 +26,30 @@ variables are case sensitive
 variable names can't start with a number and they can't have white space
 
 
+Camel Case: firstName
+Pascal Case: FirstName
+Hungarian Notation: strFirstName
+
+local variables use camel case
+
+constants use Pascal Case
+
+don't use Hungarian in C#
+
+variable types:
+
+byte
+short     which is an Int16
+int       which is an Int32
+long      which is an Int 64
+float     single
+double    double
+decimal
+char
+bool
+string
+
+
+
 
 
