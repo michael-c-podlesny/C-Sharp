@@ -86,3 +86,43 @@ namespace Variables
         }
     }
 }
+
+CODE SNIPPETS
+=============
+type in "cw" then press tab and Console.WriteLine() will be typed out
+
+
+Press CTRL + clicking the mouse over variables and datatypes will take you to their detailed information
+
+
+
+
+STRINGS
+=======
+Console.WriteLine("{0} {1}", byte.MinValue,byte.MaxValue);
+
+{0} and {1} referes to values to be passed in, in this case MinVal and MaxVal
+
+
+
+CASTING
+=======
+float f = 1.0f;
+
+int i = (int)f; //converts f to an integer so it can assign it to the variable i
+
+string s = "1";
+int i = Convert.ToInt32(s);
+
+
+CATCHING ERRORS
+===============
+            try
+            {
+                string number = "1234";
+                int i = Convert.ToInt32(number);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error in code!");
+            }
