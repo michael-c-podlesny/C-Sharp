@@ -1,0 +1,4 @@
+int[] numbers = new int[3] { 1, 2, 4 };
+
+// declares an integer array called numbers with a length of 3 and assigns the numbers 1,2,4 into the array.
+
