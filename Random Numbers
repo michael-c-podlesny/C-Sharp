@@ -1,0 +1,11 @@
+   public int Spinner(int min, int max)
+        {
+            var rnd = new Random();
+            return rnd.Next(min,max+1);
+        }
+        
+        The above code generates a random number from min to max+1
+        
+        have to add 1 to max in order to include the max number
+        
+        example, if you want a random number from 1 to 14 ... rnd would generate a number from 1 to 13, so we add 1 to max to make it 15 to make sure we get up to and including 14.
