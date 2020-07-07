@@ -1,7 +1,7 @@
    public int Spinner(int min, int max)
         {
             var rnd = new Random();
-            return rnd.Next(min,max+1);
+            return rnd.Next(min,max);
         }
         
         The above code generates a random number from min to max+1
