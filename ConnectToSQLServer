@@ -1,0 +1,28 @@
+        public void mySQLReader()
+        {
+            string connectionString = "Server = CACSQL; Database = CAC_App; User Id = sa; Password = Syt3l1n3";
+            SqlConnection cnn;
+            string sql = "SELECT Top 5 username FROM CACDashboardSecurity ORDER BY username ASC";
+            SqlCommand command;
+            SqlDataReader dataReader;
+
+            try
+            {
+                cnn = new SqlConnection(connectionString);
+                cnn.Open();
+                command = new SqlCommand(sql, cnn);
+                dataReader = command.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    Console.WriteLine("{0}", dataReader.GetValue(0));
+                }
+                dataReader.Close();
+                command.Dispose();
+                cnn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("{0}", ex.Message);
+            }
+        }
+    }
