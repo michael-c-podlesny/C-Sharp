@@ -1,0 +1,32 @@
+        public void UpdateLotsTable()
+        {
+            SQLInfo sqlINFO = new SQLInfo();
+            SqlConnection cnn;
+            string sql;
+            SqlCommand command;
+            SqlDataAdapter dataWriter = new SqlDataAdapter();
+
+            try
+            {
+                cnn = new SqlConnection(sqlINFO.GetConnectionString());
+                cnn.Open();
+                for (int i = 0; i < listA.Count; i++)
+                {
+                    // Console.WriteLine("{0}", listA[i]);
+                    sql = String.Format("UPDATE lot SET Uf_LotClass = 'A' WHERE item = '{0}'", listA[i]);
+                    command = new SqlCommand(sql, cnn);
+                    command.ExecuteNonQuery();
+                    command.Dispose();
+                    Console.WriteLine("EXECUTED LIST A: {0}", sql);
+                }
+
+                cnn.Close();
+
+
+                Console.WriteLine("DATABASE UPDATE");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("{0}", ex.Message);
+            }
+        }
