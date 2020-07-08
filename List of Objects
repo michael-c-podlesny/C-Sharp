@@ -1,0 +1,48 @@
+// our example class
+public class Book
+
+{
+
+public string BookName { get; set; } = string.Empty;
+
+public string Author { get; set; } = string.Empty;
+
+public string ISBN { get; set; } = string.Empty;
+
+}
+
+// our lists
+var bookList = new List<Book>();  // create a list of books
+
+// Intiazize the object and add it to the collection
+
+var book1 = new Book(); 
+
+bookList.Add(book1);
+
+var book2 = new Book();
+
+bookList.Add(book2);
+
+And another way is to use a "for loop" like I did below:
+
+var bookList = new List<Book>();
+
+// Another one is using for loop
+
+for(int i = 0; i < 2; i++)
+
+{
+
+     bookList.Add(new Book());
+
+}
+
+
+In the .NET framework, there is one class - Enumerable - that resides under the "System.Linq" namespace. This class contains some static methods, which we can use to create a list of objects. For example, using Enumerable.Repeat() : 
+
+// using Enumerable.Repeat
+
+var bookList = Enumerable.Repeat(new Book(), 2).ToList();
+
+In the above method, the first argument is the object we want to create or repeat. The second argument is the number of times we need to repeat the object.
