@@ -1,0 +1,2 @@
+// syntax List<type> listname = new List<type>();
+List<string> listA = new List<string>();
