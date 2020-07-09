@@ -1,0 +1,37 @@
+Enum - A set of name/value pairs (constants)
+
+use enums where you have like kind constants
+
+const int RegularMail = 1;
+const int RegisteredMail = 2;
+const int Express = 3;
+
+can be rewritten as an Enum like this:
+
+public enum ShippingMethod
+{
+  RegularMail = 1,
+  RegisteredMail = 2,
+  Express = 3
+}
+
+You can now access the enum this way:
+
+var method = ShippingMethod.Express;
+
+// using casting
+
+var method = ShippingMethod.Express;
+
+            Console.WriteLine("MAIL: {0}",(int)method);
+
+            var methodID = 3;
+            Console.WriteLine((ShippingMethod)methodID);
+            
+ Console.WriteLine(method.ToString());
+
+            var methodName = "Express";
+
+            var shippingMethid = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+
+            Console.WriteLine(shippingMethid);
