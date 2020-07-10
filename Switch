@@ -1,0 +1,54 @@
+namespace LearningCSharp
+{
+    public enum Season
+    {
+        Spring,
+        Summer,
+        Autumn,
+        Winter
+
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // switch 
+            var season = Season.Autumn;
+
+            switch (season)
+            {
+                case Season.Autumn:
+                    Console.WriteLine("It's autumn and a beautiful season.");
+                    break;
+                case Season.Spring:
+                    break;
+                case Season.Summer:
+                    break;
+                case Season.Winter:
+                    break;
+                default:
+                    Console.WriteLine("Huh?");
+                    break;
+            }
+        }
+    }
+}
+
+
+
+// multiple switch lines, if the season is spring or autumn then write to the console line
+            switch (season)
+            {
+                case Season.Spring:
+                case Season.Autumn:
+                    Console.WriteLine("It's autumn and a beautiful season.");
+                    break;
+                case Season.Summer:
+                    break;
+                case Season.Winter:
+                    break;
+                default:
+                    Console.WriteLine("Huh?");
+                    break;
+            }
