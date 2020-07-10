@@ -9,3 +9,21 @@
         have to add 1 to max in order to include the max number
         
         example, if you want a random number from 1 to 14 ... rnd would generate a number from 1 to 13, so we add 1 to max to make it 15 to make sure we get up to and including 14.
+
+
+
+// using random to manipulate strings
+            const int passwordLength = 10;
+            var random = new Random();
+            var buffer = new char[passwordLength];
+
+            for(var i=0;i< passwordLength; i++)
+            {
+                buffer[i] = (char)('a' + random.Next(0, 26));
+            }
+
+            var password = new string(buffer);
+
+                Console.WriteLine(password);
+            
+        }
