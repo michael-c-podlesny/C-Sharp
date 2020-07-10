@@ -1,0 +1,32 @@
+            int hour = 22;
+
+            if (hour>0 && hour <12)
+            {
+                Console.WriteLine("Morning");
+
+            }
+            else if (hour >=12 && hour <18)
+            {
+                Console.WriteLine("Afternoon");
+            }
+            else
+            {
+                Console.WriteLine("Evening");
+            }
+            
+            
+            // this code shows two ways to write the same thing
+            bool isGoldCustomer = true;
+            float price;
+
+            if (isGoldCustomer)
+            {
+                price = 19.95f;
+            }
+            else
+            {
+                price = 29.95f;
+            }
+            
+            // can be written as
+            float price = (isGoldCustomer) ? 19.95f : 29.95f;
