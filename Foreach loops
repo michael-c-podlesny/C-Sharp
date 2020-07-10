@@ -10,3 +10,27 @@ foreach (var number in numbers)
             {
                 Console.WriteLine(character);
             }
+
+
+// using foreach through an enum
+    public enum Seasons
+    {
+        Autumn,
+        Spring,
+        Summer,
+        Winter
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //var values = enum.getvalues(typeof(Seasons);
+        var values = Enum.GetValues(typeof(Seasons));
+
+
+            foreach (var newValue in values)
+            {
+                Console.WriteLine(newValue);
+            }
+        }
+    }
