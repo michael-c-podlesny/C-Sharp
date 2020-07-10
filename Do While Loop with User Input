@@ -1,0 +1,11 @@
+        static void Main(string[] args)
+        {
+            int userInput=0;
+            do
+            {
+                Console.WriteLine("Enter a Number from 1 through 10");
+                userInput = int.Parse(Console.ReadLine());
+            } while (userInput < 1 || userInput > 10);
+
+            Console.WriteLine("Your number was: {0}",userInput);
+        }
