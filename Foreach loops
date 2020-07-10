@@ -2,3 +2,11 @@ foreach (var number in numbers)
 {
   // statements ... used for lists
 }
+
+
+            var name = "John Smith";
+
+            foreach (var character in name)
+            {
+                Console.WriteLine(character);
+            }
