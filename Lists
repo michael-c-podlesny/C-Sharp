@@ -1,0 +1,58 @@
+            // declaring a List
+            var numbers = new List<int>();  // List of integers
+
+            var numbers2 = new List<int>() { 1, 3, 5, 7, 9, 1,5,7,9, 11, 12 };   // declare a list and set some values
+
+            // Add
+            numbers2.Add(11);
+            foreach (var item in numbers2)
+            {
+                Console.WriteLine("Add: {0}",item);
+            }
+            Console.WriteLine("---------------");
+
+            // Add Range
+            numbers.AddRange(numbers2);
+            foreach (var item in numbers)
+            {
+                Console.WriteLine("Add Range: {0}", item);
+            }
+            Console.WriteLine("---------------");
+
+            // IndexOf
+            Console.WriteLine("IndexOf: {0}", numbers.IndexOf(7));
+            Console.WriteLine("---------------");
+
+            // Last IndexOf
+            Console.WriteLine("LastIndexOf: {0}", numbers.IndexOf(9));
+            Console.WriteLine("---------------");
+
+            // Count
+            Console.WriteLine("Count: {0}", numbers.Count);
+            Console.WriteLine("---------------");
+
+            // Remove - removes the first occurence of the number 12
+            numbers.Remove(12);
+
+            for (var j =0; j < numbers.Count; j++)
+            {
+                if (numbers[j]  == 1)
+                {
+                    numbers.Remove(numbers[j]);
+                }
+
+            }
+
+            foreach (var item in numbers)
+            {
+                Console.WriteLine("Remove: {0}", item);
+            }
+            Console.WriteLine("---------------");
+
+            // Clear
+            numbers.Clear();
+            foreach (var item in numbers)
+            {
+                Console.WriteLine("Clear: {0}", item);
+            }
+            Console.WriteLine("---------------");
