@@ -2,3 +2,65 @@ int[] numbers = new int[3] { 1, 2, 4 };
 
 // declares an integer array called numbers with a length of 3 and assigns the numbers 1,2,4 into the array.
 
+//multi dimensionals
+// rectangular
+var matrix = new int[3, 5];
+or
+var matrix = new int[3, 5]
+{
+  { 1 ,3 ,5 },
+  { 1 ,3 ,5 },
+  { 1 ,3 ,5 }
+}
+
+
+//jagged
+var array = new int[3][];
+array[0] = new int[4];
+array[1] = new int[5];
+array[2] = new int[3];
+
+array[0][0] = 1;
+
+
+            // var numbers = new int[] { 3, 7, 9, 11, 2, 19 };
+            // can also be written as
+            var numbers = new[] { 3, 7, 9, 11, 2, 19 }; // which means declare a new array called numbers and initialize with the values shown
+
+            // Length
+            Console.WriteLine("LENGTH: {0}",numbers.Length);
+
+            // indexof
+            var index = Array.IndexOf(numbers, 9);
+            Console.WriteLine("INDEX: {0}",index);
+
+            // clear
+            Array.Clear(numbers, 0, 2);
+            foreach (var i in numbers)
+            {
+                Console.WriteLine("i({0})",i);
+            }
+
+            // Copy
+            var another = new int[3];
+            Array.Copy(numbers, another, 3);
+
+            foreach (var j in another)
+            {
+                Console.WriteLine("j({0})", j);
+            }
+
+            // Sort
+            Array.Sort(numbers);
+            foreach (var i in numbers)
+            {
+                Console.WriteLine("Sort({0})", i);
+            }
+
+            // Reverse Method
+            Array.Reverse(numbers);
+            foreach (var i in numbers)
+            {
+                Console.WriteLine("Reverse({0})", i);
+            }
+
