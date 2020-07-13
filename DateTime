@@ -1,0 +1,27 @@
+FORMAT SPECIFIERC
+https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
+
+            // Working with DateTime
+            var dateTime = new DateTime(2020, 1, 1);
+            var now = DateTime.Now;
+            var todaysDate = DateTime.Today;
+
+            Console.WriteLine("Hour {0}",now.Hour);
+            Console.WriteLine("Minute {0}", now.Minute);
+            Console.WriteLine("*****************************");
+
+            var tomorrow = now.AddDays(1);
+            Console.WriteLine("TOMRROW: {0}", tomorrow);
+            Console.WriteLine("*****************************");
+
+            var yesterday = now.AddDays(-1);
+            Console.WriteLine("YESTERDAY: {0}", yesterday);
+            Console.WriteLine("*****************************");
+
+            Console.WriteLine("LONG DATE: {0}",now.ToLongDateString());
+            Console.WriteLine("SHORT DATE: {0}",now.ToShortDateString());
+            Console.WriteLine("LONG TIME: {0}",now.ToLongTimeString());
+            Console.WriteLine("SHORT TIME: {0}",now.ToShortTimeString());
+            Console.WriteLine("FORMAT SPECIFIER: {0}", now.ToString("yyyy-MM-dd"));
+            Console.WriteLine("*****************************");
+       
