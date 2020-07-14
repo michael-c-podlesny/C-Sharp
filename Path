@@ -1,0 +1,5 @@
+
+Path.GetExtension(path);
+Path.GetFileName(path);
+Path.GetFileNameWithoutExtension(path);
+Path.GetDirectoryName(path);
