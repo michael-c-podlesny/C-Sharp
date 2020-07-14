@@ -1,0 +1,27 @@
+Project Related Keyboard Shortcuts
+
+    Ctrl + Shift + B = Build your project
+    Ctrl + Alt + L = Shows Solution Explorer
+    Shift + Alt + C = Add new class
+    Shift + Alt + A = Add new item to project
+    
+    
+    Editor Related Keyboard Shortcuts
+
+    Ctrl + Enter = Insert blank line above the current line
+    Ctrl + Shift + Enter = Insert blank line below the current line
+    Ctrl + Space = Autocomplete using IntelliSense
+    Alt + Shift + arrow keys(←,↑,↓,→) = Select custom part of the code
+    Ctrl + } = Match curly braces, brackets
+    Ctrl + Shift + } = Select text between matched braces, brackets
+    Ctrl + Shift + S = Saves all files and projects
+    Ctrl + K, Ctrl + C = Comments the selected lines
+    Ctrl + K, Ctrl + U = Uncomments the selected lines
+    Ctrl + K, Ctrl + D = Do proper alignment of all the code
+    Shift + End = Select the entire line from start to end
+    Shift + Home = Select the entire line from end to start
+    Ctrl + Delete = Deletes the word to the right of the cursor
+    
+    
+    From
+    https://www.codeproject.com/Articles/1010023/Must-Know-Visual-Studio-Keyboard-Shortcuts-Part-2
