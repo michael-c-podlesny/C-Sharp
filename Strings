@@ -58,3 +58,38 @@ str.ToString("C0");
             float price = 29.95f;
             var newPrice = price.ToString("c2");
             Console.WriteLine("FORMAT FLOAT TO CURRENCY: {0}", newPrice);
+
+
+       static void Main(string[] args)
+        {
+            var sentence = "According to locals (and TripAdvisor), YS is one of the wonders of Saint Elizabeth. Last April, on what happened to be my son’s 15th birthday, I hired a taxi to take us there. Davey did not want to go; he wanted to “chill” and “sleep in.” But I wanted to “experience this natural wonder.” So my angry kid and I arrive at YS, which upon first impression is paradisiacal. ";
+
+            Console.WriteLine("{0}",SummarizeText(sentence,50));
+
+
+        }
+
+        static string SummarizeText(string text, int maxLen = 20)
+        {
+            if (text.Length < maxLen)
+            {
+                return text;
+            }
+            else
+            {
+                var words = text.Split(' ');
+                var totalCharacters = 0;
+                var summaryWords = new List<string>();
+                foreach (var word in words)
+                {
+                    summaryWords.Add(word);
+                    totalCharacters += word.Length + 1;
+                    if (totalCharacters > maxLen)
+                    {
+                        break;
+                    }
+                }
+
+                return String.Join(" ", summaryWords) + "...";
+            }
+        }
