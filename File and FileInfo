@@ -1,0 +1,28 @@
+// YOU MUST include this namespace
+using System.IO;
+
+The @ sign makes it so you don't have to use double backslashes
+
+//FILE COPY
+File.Copy(@"c:\temp\mufile.jpg", "d:\temp\myfile.jpg");
+
+var path = @"c:\temp\somefile.txt";
+File.Delete(path);
+
+if (File.Exists(path))
+{
+  // do some code
+}
+
+
+//FILE INFO
+var content = File.ReadAllText(path)
+var fileInfo = new FileInfo(path);
+
+fileInfo.CopyTo("...");
+fileInfo.Delete();
+if (fileInfo.Exists)
+{
+  // do some code
+}
+
