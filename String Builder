@@ -1,0 +1,30 @@
+            var builder = new StringBuilder("HELLO WORLD");
+
+            //APPEND, APPENDLINE
+            builder
+            .Append('-', 10)
+            .AppendLine()
+            .Append("HEADER")
+            .AppendLine()
+            .Append('-', 10);
+            Console.WriteLine("{0}",builder);
+
+            // REPLACE
+            builder.Replace('-', '+');
+            Console.WriteLine("{0}", builder);
+
+
+            // REMOVE
+            builder.Remove(0, 10);
+            Console.WriteLine("{0}", builder);
+
+
+            // INSERT
+            builder.Insert(0, new string('a', 10));
+            Console.WriteLine("{0}", builder);
+
+            Console.WriteLine("FIRST INDEX: {0}", builder[1]);
+
+            // CLEAR
+            builder.Clear();
+            Console.WriteLine("{0}", builder);
