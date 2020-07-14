@@ -1,0 +1,60 @@
+Format Strings
+
+c or C for Currency
+d or D for Decimal
+e or E for Exponential
+f or F for Fixed Point
+x or X for Hexadecimal
+
+example
+var str = "1234";
+
+str.ToString("C");
+
+// result $1,234.00
+
+str.ToString("C0");
+//result $1,234
+
+            // NOTE: THE SINGLE QUOTES ARE NOT REQUIRED.  THEY ARE ONLY BEING USED IN THIS EXAMPLE TO SHOW THE TRIM FUNCTIONALITY
+            var fullName = "Michael Podlesny   ";   // spaces added at the end on purpose to use Trim
+
+            // TRIM
+            Console.WriteLine("TRIM\n****");
+            Console.WriteLine("TRIM: '{0}'", fullName.Trim());
+
+            // TO UPPER -with using TRIM
+            Console.WriteLine("TO UPPER\n********");
+            Console.WriteLine("TO UPPER: '{0}'\n\n", fullName.Trim().ToUpper());
+
+            // INDEX OF 
+            Console.WriteLine("INDEX OF\n********");
+            var index = fullName.IndexOf(' ');
+            var firstName = fullName.Substring(0, index);
+            var lastName = fullName.Substring(index + 1);
+            Console.WriteLine("FIRST NAME: '{0}'",firstName.Trim());
+            Console.WriteLine("LAST NAME NAME: '{0}'\n\n", lastName.Trim());
+
+            // SPLIT
+            Console.WriteLine("SPLIT\n*****");
+            var names = fullName.Split(' ');
+            Console.WriteLine("FIRST NAME: '{0}'", names[0].Trim());
+            Console.WriteLine("LAST NAME NAME: '{0}'\n\n", names[1].Trim());
+
+            // REPLACE
+            Console.WriteLine("REPLACE\n*****");
+            Console.WriteLine("NEW NAME: '{0}'\n\n", fullName.Replace("Michael","Mike").Trim());
+
+            // IsNullOrEmpty AND IsNullOrWhiteSpace
+            if (String.IsNullOrWhiteSpace(" "))
+            {
+                Console.WriteLine("Invalid");
+            }
+
+            // CONVERT
+            var str = "25";
+            var age = Convert.ToByte(str);
+
+            float price = 29.95f;
+            var newPrice = price.ToString("c2");
+            Console.WriteLine("FORMAT FLOAT TO CURRENCY: {0}", newPrice);
