@@ -1,0 +1,12 @@
+var directory = "directory name";
+Directory.CreateDirectory(directory);
+
+var files = Directory.GetFiles(directory, "*.*", SearchOption);
+foreach (var file in files) 
+{
+  console.writeline("{0}",file)
+}
+
+var directories = Directory.GetDirectories(path);
+
+
