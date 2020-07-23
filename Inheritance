@@ -1,0 +1,13 @@
+A kind of relationship between two classes that allows one to inherit code from the other
+
+Syntax
+
+public class PresentationObject 
+{
+  // common shared code
+}
+
+plublic class Text : PresentationObject
+{
+  // code specific to text
+}
