@@ -1,0 +1,48 @@
+    public class Logger
+    {
+        public void Log(string message)
+        {
+            System.Console.WriteLine(message);
+        }
+    }
+    
+public class DbMigrator
+    {
+        private readonly Logger _logger;
+        public DbMigrator(Logger logger)
+        {
+            _logger = logger;
+        }
+
+        public void migrate()
+        {
+            _logger.Log("We are migrating blah blah blah");
+        }
+    }
+    
+       class MyInstall
+    {
+        private readonly Logger _logger;
+
+        public MyInstall(Logger logger)
+        {
+            _logger = logger;
+        }
+
+        public void Install()
+        {
+            _logger.Log("We are installing");
+        }
+    }
+    
+    
+                var dbMigrator = new DbMigrator(new Logger());
+            var logger = new Logger();
+            var myInstall = new MyInstall(logger);
+
+
+            dbMigrator.migrate();
+            myInstall.Install();
+            
+            
+            
