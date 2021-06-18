@@ -1,0 +1,7 @@
+In Visual Studio C# on the main menu go to Tools->NuGet Package Manager->Package Manager Console
+
+At the bottom of the screen you will see the console pop up.
+
+In the console window type:
+
+install-package System.Data.SqlClient
